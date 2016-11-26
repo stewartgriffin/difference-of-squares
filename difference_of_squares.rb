@@ -16,4 +16,8 @@ class Squares
       sum_of_sq += n**2
     end
   end
+  
+  def difference
+    square_of_sum - sum_of_squares
+  end
 end
