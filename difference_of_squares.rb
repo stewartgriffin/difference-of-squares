@@ -3,9 +3,10 @@ module BookKeeping
 end
 
 class Squares
-  def initialize(*)
+  def initialize(number)
+    @squares_to_calculate = Range.new(0,number)
   end
   def square_of_sum
-    225
+    @squares_to_calculate.reduce(:+)**2
   end
 end
